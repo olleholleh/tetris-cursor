@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테트리스</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <h1>테트리스</h1>
+
+    <div class="game-layout">
+      <section class="board-section">
+        <div id="game-board" class="game-board" aria-label="테트리스 게임 보드"></div>
+      </section>
+
+      <aside class="side-panel">
+        <div class="score-panel">
+          <h2>점수</h2>
+          <p id="score" class="score-value">0</p>
+          <p id="game-status" class="game-status" aria-live="polite"></p>
+        </div>
+
+        <div class="button-panel">
+          <button id="start-btn" type="button">시작</button>
+          <button id="restart-btn" type="button">재시작</button>
+        </div>
+
+        <div class="controls-panel">
+          <h2>조작법</h2>
+          <ul>
+            <li><kbd>←</kbd> 왼쪽 이동</li>
+            <li><kbd>→</kbd> 오른쪽 이동</li>
+            <li><kbd>↑</kbd> 회전</li>
+            <li><kbd>↓</kbd> 한 칸 빠르게 내리기 (soft drop)</li>
+            <li><kbd>Space</kbd> 즉시 내리기 (hard drop)</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
